@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AWL tester</title>
+        <link href="../style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <form target="_blank" action="/family" method="POST">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="firstName" id="first-name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="lastName" id="last-name">
+                <label for="position">Position:</label>
+                <input type="text" name="position" id="position">
+                <button type="submit">Submit</button>
+            </form>
+            <form target="_blank" action="/family" method="GET">
+                <button type="submit">Show all family members</button>
+            </form>
+            <form target="_blank" action="/family/position" method="GET">
+                <label for="position">Position:</label>
+                <input type="text" name="position" id="position">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+     
+
+        <script src="../app.js"></script>
+        <script src="../sql.js"></script>
+    </body>
+</html>
